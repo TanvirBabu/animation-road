@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+
+}
+ html,body{
+    font-family:sans-serif ;
+    font-size: 16px;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+
+.sky, .grass, .road{
+    position: relative;
+}
+.sky{
+ background-color:rgb(135, 206, 235) ;   
+ 
+ height:40%;
+ 
+}
+.grass{
+    background-color:seagreen;
+    
+    height:30%;
+    
+}
+.road{
+    background-color:rgb(71,72,76);
+
+    height:30%;
+    border-top:10px solid grey;
+    border-bottom:10px solid grey;
+    |
+
+
+}
+.line{
+    border:6px dashed #fff;
+    position: absolute;
+    top:45%;
+    height:0px;
+    width:100%;
+}
+ .bike{
+    width:70px;
+    height:70px;
+    left:0;
+    position: absolute;
+    animation-name:bike ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    top:-30px;
+    animation-timing-function:ease-in ;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+}
+@keyframes bike{
+    from{ transform: translateX(-100px)}
+    to{ transform: translateX(1380px)}
+}
+.bike2{
+    width:70px;
+    height:70px;
+    right:0;
+    position: absolute;
+    animation-name:bike2 ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    top:80px;
+    animation-timing-function:linear;
+    animation-fill-mode: ;
+    animation-delay: 0s;
+
+}
+@keyframes bike2{
+    from{ transform: translateX(100px)}
+    to{ transform: translateX(-1380px)}
+}
+
+
+.police{
+    width:100px;
+    height:100px;
+    left:-10px;
+    position: absolute;
+    animation-name:police ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    top:-5px;
+    animation-timing-function:ease-in ;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+@keyframes police{
+    from{ transform: translateX(-100px)}
+    to{ transform: translateX(1380px)}
+}
+.ambulance{
+    width:90;
+    height:90px;
+    right:0;
+    position: absolute;
+    animation-name:ambulance ;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    top:110px;
+    animation-timing-function:ease-in
+     ;
+    animation-fill-mode: ;
+    animation-delay: 0s;
+
+}
+
+@keyframes  ambulance{
+    from{ transform: translateX(100px)}
+    to{ transform: translateX(-1380px)}
+}
+.car3{
+    width:80px;
+    height:80px;
+    left:-10px;
+    position: absolute;
+    animation-name:car3 ;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    top:-10px;
+    animation-timing-function:ease-in-out ;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    opacity: 100%;
+    
+}
+@keyframes car3{
+    from{ transform: translateX(-100px)}
+    to{ transform: translateX(1380px)}
+
+}
+
+
+
+
+.man{
+    width:80px;
+    height:80px;
+    left:-10px;
+    position: absolute;
+    animation-name:man ;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    top:-87px;
+    animation-timing-function:ease-in-out ;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    opacity: 100%;
+    background:transparent;
+    color:white;
+}
+@keyframes man{
+    from{ transform: translateX(-100px)}
+    to{ transform: translateX(1380px)}
+}
+
+.cloud1{
+    width:150px;
+    height:150px;
+    left:0px;
+    top:30px;
+    position: absolute;
+    animation-name:cloud1 ;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+}
+@keyframes cloud1{
+    from{ transform: translateX(-50px)}
+    to{ transform: translateX(1380px)}
+}
+.cloud2{
+    width:120px;
+    height:120px;
+    left:0px;
+    top:75px;
+    position: absolute;
+    animation-name:cloud2 ;
+    animation-duration: 110s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    opacity:.6 ;
+
+}
+@keyframes cloud2{
+    from{ transform: translateX(-300px)}
+    to{ transform: translateX(1380px)}
+}
+.biman{
+    width:100px;
+    height:100px;
+    left:0px;
+    top:30px;
+    position: absolute;
+    animation-name:biman ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: 
+    animation-fill-mode: backwards;
+    animation-timing-function:cubic-bezier(1,1.01,1,1.01);
+    animation-delay: 0s;
+
+}
+@keyframes biman{
+    from{ transform: translateX(-200px)}
+    to{ transform: translateX(1380px)}
+}
+.biman2{
+    width:100px;
+    height:100px;
+    left:0px;
+    top:140px;
+    position: absolute;
+    animation-name:biman2 ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: 
+    animation-fill-mode: backwards;
+    animation-timing-function:cubic-bezier(1,1.01,1,1.01);
+    animation-delay: 0s;
+
+}
+@keyframes biman2{
+    from{ transform: translateX(-200px)}
+    to{ transform: translateX(1380px)}
+}
+.tree{
+    width:90px;
+    height:100px;
+    position: absolute;
+    top:100px;
+    left:40px;
+}
+.tree2{
+    width:90px;
+    height:100px;
+    position: absolute;
+    top:100px;
+    left:300px;
+}
+.tree3{
+    width:90px;
+    height:100px;
+    position: absolute;
+    top:100px;
+    left:600px;
+}
+.tree4{
+    width:90px;
+    height:100px;
+    position: absolute;
+    top:100px;
+    left:900px;
+}
+.tree5{
+    width:90px;
+    height:100px;
+    position: absolute;
+    top:100px;
+    left:1200px;
+}
